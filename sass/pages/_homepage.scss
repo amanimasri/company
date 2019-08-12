@@ -1,0 +1,145 @@
+/* Start slider */
+
+.slider{
+    blockquote{
+        font: {
+            size: 17px;
+            style: italic;
+            weight: bold;
+        }
+        line-height: 1.7;
+        text-align: center;
+        color: #5e5e5e;
+        width: 80%;
+        margin: 30px auto;
+    }
+    img{
+        max-width: 100%;
+    }
+    .bullets{
+        text-align: center;
+        li{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: $gray-color;
+            border-radius: 50%;
+            border: 2px solid $gray-color;
+            &.active {
+                background-color: #FFF;
+                border: 2px solid #333;
+            }
+        }
+    }
+}
+
+/* End Slider */
+//-----------------------------------------------------------
+/* Start Services */
+
+.services{
+    .service-box{
+        @media #{$minMedium} {
+            float: $float-left;
+            width: (100% / 3);
+            &:not(:last-of-type){
+                padding-right: 20px;
+            }
+        }
+        @media #{$maxMobile} {
+            i{
+                display: block;
+                margin-bottom: 15px;
+            }
+        }
+        .service-title{
+            color: #666;
+            i{
+                font-size: 35px;
+                position: relative;
+                top: 4px;
+                margin-right: 10px;
+            }
+        }
+        .service-desc{
+            color: #777;
+            line-height: 1.5;
+        }
+        .link{
+            color: $red-color;
+            text-decoration: none;
+        }
+    }
+}
+
+/* End Services */
+//-----------------------------------------------------------
+/* Start Our Players*/
+
+.our-players{
+    .player-box{
+        @media #{$minSmall} {
+            float: $float-left;
+            width: (100% / 2);
+            text-align: center;
+            margin-bottom: 40px;
+          }
+        @media #{$minMedium} {
+            width: (100% / 3);
+            text-align: $text-left;
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+         @media #{$minLarge} {
+            width: (100% / 5);
+          }
+        @media #{$maxMobile} {
+            margin-bottom: 40px;
+          }
+        img{
+            max-width: 100%;
+            width: 300px;
+            height: 200px;
+        }
+        .player-title{
+            color: #666;
+            font-weight: normal;
+            span{
+                font-weight: bold;
+            }
+        }
+        .service-desc{
+            color: #777;
+            line-height: 1.5;
+        }
+        .link{
+            color: $red-color;
+            text-decoration: none;
+        }
+    }
+}
+
+/* End Our Players */
+//-----------------------------------------------------------
+/* Start Lorem Ipsum */
+
+.lorem-ipsum{
+    .lorem-box{
+        float: $float-left;
+        width: (100% / 3);
+        &:not(:last-of-type){
+            padding-right: 20px;
+        }
+        @media #{$maxMobile} {
+            float: none;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        img{
+            max-width: 100%;
+            max-height: 100%;
+        }        
+    }        
+}
+
+/* End Lorem Ipsum */
